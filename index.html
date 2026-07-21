@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
     <header class="site-header">
       <div class="container">
-        <h1 class="site-title">Your Name</h1>
+        <h1 class="site-title">Jolene Lewis Valentine</h1>
         <nav class="nav">
           <a href="#projects">Projects</a>
           <a href="#about">About</a>
@@ -33,12 +33,32 @@
       </section>
       <section id="contact" class="contact">
         <h3>Contact</h3>
-        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>Prefer email? <a href="mailto:you@example.com">you@example.com</a></p>
+
+        <form id="contact-form" class="contact-form" data-endpoint="https://formspree.io/f/YOUR_FORM_ID">
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="cta">Send message</button>
+            <div id="contact-status" class="status"></div>
+          </div>
+        </form>
+
         <p>GitHub: <a href="https://github.com/deeplearninglabs">deeplearninglabs</a></p>
       </section>
     </main>
     <footer class="site-footer">
-      <div class="container">© <span id="year"></span> Your Name</div>
+      <div class="container">© <span id="year"></span> Jolene Lewis Valentine</div>
     </footer>
     <script src="script.js"></script>
   </body>
