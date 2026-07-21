@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">Your Name</h1>
+        <nav class="nav">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h2>Hi — I'm a developer who builds things.</h2>
+        <p>Welcome to my portfolio. Scroll to see projects and contact info.</p>
+        <a class="cta" href="#projects">View projects</a>
+      </div>
+    </section>
+    <main class="container">
+      <section id="projects" class="projects">
+        <h3>Projects</h3>
+        <div id="projects-list" class="grid"></div>
+      </section>
+      <section id="about" class="about">
+        <h3>About</h3>
+        <p>Short bio goes here. Add skills, interests, and what you build.</p>
+      </section>
+      <section id="contact" class="contact">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/deeplearninglabs">deeplearninglabs</a></p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Your Name</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+ </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | UI/UX & Web Strategy</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-green: #34d399;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 3rem; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { color: var(--text-muted); font-size: 1.1rem; }
+    
+    .grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+    @media(min-width: 768px) { .grid { grid-template-columns: 1fr 1fr; } }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      padding: 1.8rem;
+      border: 1px solid #334155;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+    .tag-blue { background: rgba(56, 189, 248, 0.15); color: var(--accent); }
+    .tag-green { background: rgba(52, 211, 153, 0.15); color: var(--accent-green); }
+
+    .card h2 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+    .card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem; }
+    .card ul { list-style-type: none; margin-bottom: 1.5rem; }
+    .card ul li { font-size: 0.9rem; color: #cbd5e1; margin-bottom: 0.4rem; position: relative; padding-left: 1.2rem; }
+    .card ul li::before { content: "•"; position: absolute; left: 0; color: var(--accent); }
+
+    .footer-links { text-align: center; margin-top: 4rem; color: var(--text-muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>UX & Brand Design Portfolio</h1>
+      <p>Selected Works in Digital Products, Rebranding, and Web Layouts</p>
+    </header>
+
+    <main class="grid">
+      <!-- MINDLE CARD -->
+      <article class="card">
+        <div>
+          <span class="tag tag-blue">UI/UX Design</span>
+          <h2>Mindle — Digital Health & Wellness</h2>
+          <p>Multi-step responsive onboarding layout designed to simplify wellness goals through clean vector icons and focused user prompts.</p>
+          <ul>
+            <li>Designed custom vector icon set</li>
+            <li>Optimized mobile-first onboarding steps</li>
+            <li>Created structured visual architecture</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- IMPACTTEK CARD -->
+      <article class="card">
+        <div>
+          <span class="tag tag-green">Brand & Web Redesign</span>
+          <h2>ImpactTek — Non-Profit IT Academy</h2>
+          <p>Comprehensive identity and website redesign for a 501(c)(3) tech training organization to increase student registrations and trust.</p>
+          <ul>
+            <li>Geometric logo redesign for upward growth</li>
+            <li>Structured SCHEV, AWS, & CompTIA trust systems</li>
+            <li>Streamlined student onboarding flow</li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <p>© 2026 • Hosted on GitHub Pages</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
